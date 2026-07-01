@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nexora Technologies - Building Digital Solutions for Tomorrow</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body class="bg-slate-50 text-slate-900 min-h-screen flex flex-col">
+
+    <div id="toast-container" class="fixed top-5 right-5 z-50 flex flex-col gap-3"></div>
+
+    <header class="bg-white border-b border-slate-200 sticky top-0 z-40 shadow-sm">
+      <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+        <a href="./index.html" class="flex items-center gap-3 font-extrabold text-xl text-slate-900 tracking-tight">
+          <div class="w-8 h-8 bg-indigo-700 rounded-lg flex items-center justify-center text-white text-sm font-bold">N</div>
+          <span>Nexora Technologies</span>
+        </a>
+        <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
+          <a href="./index.html" class="nav-link text-slate-600 hover:text-indigo-700 pb-1">Home</a>
+          <a href="./about.html" class="nav-link text-slate-600 hover:text-indigo-700 pb-1">About Us</a>
+          <a href="./services.html" class="nav-link text-slate-600 hover:text-indigo-700 pb-1">Services</a>
+          <a href="./careers.html" class="nav-link text-slate-600 hover:text-indigo-700 pb-1">Careers</a>
+          <a href="./gallery.html" class="nav-link text-slate-600 hover:text-indigo-700 pb-1">Gallery</a>
+          <a href="./contact.html" class="nav-link text-slate-600 hover:text-indigo-700 pb-1">Contact Us</a>
+        </nav>
+        <div class="flex items-center gap-2">
+          <span class="hidden sm:inline-block text-xs bg-indigo-50 text-indigo-700 font-semibold px-3 py-1.5 rounded-full border border-indigo-200 uppercase tracking-wider">Est. 2021</span>
+          <button id="mobile-menu-btn" class="md:hidden p-2 text-slate-600 hover:text-indigo-700 focus:outline-none" aria-label="Toggle menu">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div id="mobile-menu" class="hidden md:hidden border-t border-slate-200 bg-white px-6 py-4 space-y-3">
+        <a href="./index.html" class="nav-link block text-slate-600 hover:text-indigo-700 font-medium">Home</a>
+        <a href="./about.html" class="nav-link block text-slate-600 hover:text-indigo-700 font-medium">About Us</a>
+        <a href="./services.html" class="nav-link block text-slate-600 hover:text-indigo-700 font-medium">Services</a>
+        <a href="./careers.html" class="nav-link block text-slate-600 hover:text-indigo-700 font-medium">Careers</a>
+        <a href="./gallery.html" class="nav-link block text-slate-600 hover:text-indigo-700 font-medium">Gallery</a>
+        <a href="./contact.html" class="nav-link block text-slate-600 hover:text-indigo-700 font-medium">Contact Us</a>
+      </div>
+    </header>
+
+    <section class="bg-gradient-to-br from-white via-slate-50 to-indigo-50/30 border-b border-slate-200 py-12 md:py-20">
+      <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <div class="lg:col-span-7 space-y-6">
+          <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tight leading-none">
+            Transforming Businesses Through Technology
+          </h1>
+          <p class="text-lg text-slate-600 max-w-2xl leading-relaxed">
+            At Nexora Technologies, we help organizations accelerate growth through innovative software solutions, cloud infrastructure, DevOps automation, and AI-driven applications. Our mission is to empower businesses with scalable, secure, and future-ready digital solutions.
+          </p>
+          <div class="flex flex-wrap gap-4">
+            <a href="services.html" class="bg-indigo-700 hover:bg-indigo-800 text-white font-bold px-6 py-3 rounded-xl shadow-md shadow-indigo-500/10 transition-all">
+              Explore Services
+            </a>
+            <a href="contact.html" class="border border-slate-200 bg-white text-slate-700 hover:bg-slate-50 font-bold px-6 py-3 rounded-xl transition-all">
+              Contact Us
+            </a>
+          </div>
+        </div>
+        <div class="lg:col-span-5">
+          <div class="bg-indigo-900 text-white rounded-2xl shadow-2xl p-8 border border-indigo-800 space-y-4">
+            <div class="flex items-center gap-3 mb-4">
+              <div class="w-10 h-10 bg-indigo-800/50 rounded-xl flex items-center justify-center">
+                <svg class="w-5 h-5 text-indigo-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                </svg>
+              </div>
+              <span class="text-sm font-semibold text-indigo-200">Trusted by industry leaders</span>
+            </div>
+            <p class="text-indigo-200 text-sm leading-relaxed">
+              We partner with enterprises across finance, healthcare, e-commerce, and logistics to deliver secure, scalable digital solutions that drive measurable impact.
+            </p>
+            <div class="flex flex-wrap gap-3 pt-2">
+              <span class="text-xs bg-indigo-800/50 text-indigo-200 px-3 py-1.5 rounded-full">Chennai, India</span>
+              <span class="text-xs bg-indigo-800/50 text-indigo-200 px-3 py-1.5 rounded-full">150+ Team Members</span>
+              <span class="text-xs bg-indigo-800/50 text-indigo-200 px-3 py-1.5 rounded-full">Founded 2021</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="max-w-7xl mx-auto px-6 py-16 w-full">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <h2 class="text-3xl font-extrabold text-slate-900 tracking-tight">Why Choose Us</h2>
+        <p class="text-slate-500 mt-2">We deliver technology that drives real business outcomes.</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:border-indigo-300 transition-all">
+          <div class="w-12 h-12 bg-indigo-50 text-indigo-700 rounded-xl flex items-center justify-center text-xl font-bold mb-4">01</div>
+          <h3 class="text-lg font-bold text-slate-900">Innovation First</h3>
+          <p class="text-sm text-slate-600 mt-2 leading-relaxed">We leverage modern technologies to solve complex business challenges.</p>
+        </div>
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:border-indigo-300 transition-all">
+          <div class="w-12 h-12 bg-indigo-50 text-indigo-700 rounded-xl flex items-center justify-center text-xl font-bold mb-4">02</div>
+          <h3 class="text-lg font-bold text-slate-900">Customer Focused</h3>
+          <p class="text-sm text-slate-600 mt-2 leading-relaxed">Every solution is tailored to meet unique client requirements.</p>
+        </div>
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:border-indigo-300 transition-all">
+          <div class="w-12 h-12 bg-indigo-50 text-indigo-700 rounded-xl flex items-center justify-center text-xl font-bold mb-4">03</div>
+          <h3 class="text-lg font-bold text-slate-900">Reliable Delivery</h3>
+          <p class="text-sm text-slate-600 mt-2 leading-relaxed">Agile development practices ensure on-time project delivery.</p>
+        </div>
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:border-indigo-300 transition-all">
+          <div class="w-12 h-12 bg-indigo-50 text-indigo-700 rounded-xl flex items-center justify-center text-xl font-bold mb-4">04</div>
+          <h3 class="text-lg font-bold text-slate-900">Scalable Solutions</h3>
+          <p class="text-sm text-slate-600 mt-2 leading-relaxed">Designed to grow with your business needs.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-indigo-900 text-white py-16">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+          <div>
+            <p class="text-4xl font-black text-indigo-200">150+</p>
+            <p class="text-sm font-semibold text-indigo-300 mt-1 uppercase tracking-wider">Employees</p>
+          </div>
+          <div>
+            <p class="text-4xl font-black text-indigo-200">75+</p>
+            <p class="text-sm font-semibold text-indigo-300 mt-1 uppercase tracking-wider">Projects Delivered</p>
+          </div>
+          <div>
+            <p class="text-4xl font-black text-indigo-200">40+</p>
+            <p class="text-sm font-semibold text-indigo-300 mt-1 uppercase tracking-wider">Enterprise Clients</p>
+          </div>
+          <div>
+            <p class="text-4xl font-black text-indigo-200">99.9%</p>
+            <p class="text-sm font-semibold text-indigo-300 mt-1 uppercase tracking-wider">Service Availability</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-slate-900 border-t border-slate-800 text-white py-10 px-6 mt-auto">
+      <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+        <div class="text-center md:text-left">
+          <p class="font-bold text-lg tracking-tight">Nexora Technologies Pvt. Ltd.</p>
+          <p class="text-sm text-slate-400 mt-1">Building Digital Solutions for Tomorrow</p>
+        </div>
+        <div class="flex items-center gap-6 text-sm">
+          <a href="./index.html" class="text-slate-400 hover:text-white transition">Home</a>
+          <a href="./about.html" class="text-slate-400 hover:text-white transition">About</a>
+          <a href="./services.html" class="text-slate-400 hover:text-white transition">Services</a>
+          <a href="./careers.html" class="text-slate-400 hover:text-white transition">Careers</a>
+          <a href="./gallery.html" class="text-slate-400 hover:text-white transition">Gallery</a>
+          <a href="./contact.html" class="text-slate-400 hover:text-white transition">Contact</a>
+        </div>
+      </div>
+      <div class="max-w-7xl mx-auto mt-6 pt-6 border-t border-slate-800 text-center text-sm text-slate-500">
+        &copy; 2026 Nexora Technologies. All Rights Reserved.
+      </div>
+    </footer>
+
+    <script src="js/script.js" defer></script>
+  </body>
+</html>
