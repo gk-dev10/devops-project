@@ -35,7 +35,7 @@ pipeline {
         stage('Run Container') {
             steps {
                 echo 'Starting new container...'
-                bat 'docker run -d -p 8080:80 --name %CONTAINER_NAME% %IMAGE_NAME%'
+                bat 'docker run -d -p 8082:80 --name %CONTAINER_NAME% %IMAGE_NAME%'
             }
         }
 
