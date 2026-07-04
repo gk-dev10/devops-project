@@ -2,24 +2,24 @@ apiVersion: apps/v1
 kind: Deployment
 
 metadata:
-  name: nexora-deployment
+  name: devops-project-deployment
 
 spec:
   replicas: 2
 
   selector:
     matchLabels:
-      app: nexora
+      app: devops-project
 
   template:
     metadata:
       labels:
-        app: nexora
+        app: devops-project
 
     spec:
       containers:
-      - name: nexora
-        image: nexora-website
-        imagePullPolicy: Never
+      - name: devops-project
+        image: gkdev07/devops-project:latest
+        imagePullPolicy: Always
         ports:
         - containerPort: 80
