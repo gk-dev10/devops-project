@@ -1,51 +1,194 @@
-# ABC Technologies - DevOps Deployment Project
+Nexora Technologies – DevOps Deployment & Monitoring Project
 
-This repository contains the multi-page corporate website for **ABC Technologies**, developed in pure HTML, CSS, and Vanilla JavaScript, paired with comprehensive DevOps orchestration manifests for continuous integration, containerization, orchestration, and continuous monitoring.
+This repository contains the source code and DevOps infrastructure for Nexora Technologies, a multi-page corporate website deployed using modern DevOps practices.
 
-This project is fully designed and structured for submission in **DEVOPS ASSIGNMENT - 2**.
+The project demonstrates the complete software delivery lifecycle including:
 
----
+Source Code Management using Git & GitHub
+Continuous Integration & Continuous Deployment using Jenkins
+Containerization using Docker
+Container Orchestration using Kubernetes
+Infrastructure Monitoring using Grafana, Graphite, and Telegraf
+Service Health Monitoring using Nagios
 
-## 📂 Project Structure
-
-```text
-corporate-website/
+📂 Project Structure
+devops-project/
 │
-├── index.html         # Main Landing Page / Live DevOps Command Dashboard
-├── about.html         # About Us Page & Collaborative Git Workflow Section
-├── services.html      # Technical Services & Configuration Snippets
-├── careers.html       # Careers Page & Drag-Drop Resume Uploader
-├── gallery.html       # Visual Workplace Gallery
-├── contact.html       # Contact Us Form with Local Storage Queuing
+├── index.html
+├── about.html
+├── services.html
+├── careers.html
+├── gallery.html
+├── contact.html
 │
 ├── css/
-│   └── style.css      # Core Custom Stylesheets (Professional Polish Design)
+│   └── style.css
 │
 ├── js/
-│   └── script.js      # Interactive Playground Core (Jenkins, Pods, Grafana charts)
+│   └── script.js
 │
-├── images/
-│   ├── office1.jpg    # HQ Workplace image asset placeholder
-│   ├── office2.jpg    # Laboratory image asset placeholder
-│   └── team.jpg       # Core Baremetal Systems Team asset placeholder
-│
-├── Dockerfile         # Production Multi-stage Build Manifest (NGINX Base)
-├── Jenkinsfile        # Declarative Pipeline Script (Checkout -> Lint -> Build -> Push -> Deploy -> Verify)
-├── deployment.yaml    # Kubernetes Pod controller with CPU/Mem Quotas & Probes
-├── service.yaml       # Kubernetes Service Router configuration (NodePort: 32080)
-└── README.md          # Implementation Handbook & Deployment documentation
-```
+├── Dockerfile
+├── Jenkinsfile
+├── deployment.yaml
+├── service.yaml
+├── telegraf.conf
+├── README.md
 
----
+🚀 Project Features
+Website
+Multi-page corporate website
+Responsive design
+Home, About, Services, Careers, Gallery and Contact pages
+Modern UI with professional business theme
+Jenkins CI/CD Pipeline
 
-## 🚀 Key Features
+The project uses a Declarative Jenkins Pipeline to automate deployment.
 
-1. **Static Multi-Page Corporate Site**: Standard, light, high-fidelity pages matching the "Professional Polish" design style, utilising deep Slate `#0f172a` and vibrant Blue `#2563eb` color palettes.
-2. **Interactive DevOps Simulation**:
-   - **Git Push Simulator**: Push code with custom messages directly in the web browser, automatically triggering the live Jenkins Pipeline simulation.
-   - **Jenkins pipeline flow chart**: A visual live status grid walking through standard build steps with console output logs.
-   - **Kubernetes Replica Controller**: Live view of replica pods. Users can click *Terminate* on pods to trigger simulated replica crashes and watch the scheduler automatically spin up replacement pods (*Self-healing*).
-   - **Live Grafana Canvas charts**: Real-time aggregated metrics displaying CPU load and network rate trends with trigger buttons to inject traffic spikes or server outages.
-   - **Nagios Status Indicators**: Live check statuses mapping cluster health, port 80 traffic, and load limits.
-3. **DevOps Document Compiler**: An integrated report builder. Entering Student Name and Register Number compiles a comprehensive, academic report in Markdown matching university guidelines.
+Pipeline Stages
+Checkout Source Code
+        ↓
+Build Docker Image
+        ↓
+Stop Existing Container
+        ↓
+Run New Container
+        ↓
+Verify Deployment
 
+The pipeline automatically:
+
+Pulls latest code from GitHub
+Builds Docker image
+Stops old container
+Deploys new container
+Verifies successful deployment
+Docker Containerization
+
+The website is containerized using Docker and served through NGINX.
+
+Docker Features
+Lightweight NGINX image
+Fast deployment
+Isolated runtime environment
+Consistent execution across environments
+Kubernetes Deployment
+
+Application deployment is managed through Kubernetes.
+
+Kubernetes Components
+Deployment
+ReplicaSet
+Pods
+NodePort Service
+Features
+Self-healing
+High availability
+Automated pod management
+Scalability support
+Monitoring Stack
+Grafana
+
+Grafana is used for real-time visualization of infrastructure metrics.
+
+Dashboard Panels:
+
+CPU Usage
+Memory Usage
+Disk Usage
+Network Traffic
+System Uptime
+Telegraf
+
+Telegraf collects system-level metrics from Docker containers and host resources.
+
+Collected Metrics:
+
+CPU
+Memory
+Disk
+Network
+System statistics
+Graphite
+
+Graphite acts as the time-series metrics storage backend.
+
+Responsibilities:
+
+Receive metrics from Telegraf
+Store historical performance data
+Provide data source for Grafana
+Nagios
+
+Nagios continuously monitors service availability.
+
+Checks include:
+
+Website status
+HTTP response validation
+Service uptime
+Availability monitoring
+
+🏗️ Technology Stack
+Category	Technology
+Frontend	HTML, CSS, JavaScript
+Source Control	Git, GitHub
+CI/CD	Jenkins
+Containerization	Docker
+Orchestration	Kubernetes
+Monitoring	Grafana
+Metrics Collection	Telegraf
+Metrics Storage	Graphite
+Service Monitoring	Nagios
+
+🔄 DevOps Workflow
+Developer
+    ↓
+GitHub Repository
+    ↓
+Jenkins Pipeline
+    ↓
+Docker Image Build
+    ↓
+Container Deployment
+    ↓
+Kubernetes Orchestration
+    ↓
+Website Deployment
+    ↓
+Telegraf Metrics Collection
+    ↓
+Graphite Metrics Storage
+    ↓
+Grafana Visualization
+    ↓
+Nagios Health Monitoring
+📊 Monitoring Dashboard
+
+The Grafana dashboard provides real-time visibility into:
+
+CPU Utilization
+Memory Consumption
+Disk Usage
+Network Throughput
+System Uptime
+
+This enables proactive monitoring and performance analysis of the deployed application.
+
+✅ Assignment Outcomes
+
+Successfully implemented:
+
+Continuous Integration (CI)
+Continuous Deployment (CD)
+Docker-based containerization
+Kubernetes deployment
+Automated build pipeline
+Infrastructure monitoring
+Application health monitoring
+Real-time metrics visualization
+
+👨‍💻 Author
+
+Gokul Srinivasan
+B.Tech Information Technology
+Vellore Institute of Technology (VIT)
